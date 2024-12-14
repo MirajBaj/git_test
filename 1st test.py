@@ -1,13 +1,21 @@
-first='Johnny'
-last='Depp'
-message  = first + '[' + last + '] is a coder'
-msg=f'{first}[{last}] is a coder'
-print(msg)
-print(message)
-length=len(message)
-print(length)
-msg.upper()
+cmd=''
+while cmd.lower() != "quit":
+    cmd = input().lower()
+    if cmd == "help":
+        print("""
+        start-to start the car
+        stop - to stop the car
+        quit - to quit the game
+        """)
 
-print(msg.find('n'))
-print(msg.replace('Depp','Sins'))
-print('coder' in msg)
+    elif cmd == "start":
+        print("Car has started...")
+
+    elif cmd == "stop":
+        print("the car has stopped")
+    elif cmd=="quit":
+        print("Bye")
+        break
+    else:
+        print("I dont understand...")
+
