@@ -3,9 +3,9 @@ while cmd.lower() != "quit":
     cmd = input().lower()
     if cmd == "help":
         print("""
-        start-to start the car
-        stop - to stop the car
-        quit - to quit the game
+start-to start the car
+stop - to stop the car
+quit - to quit the game
         """)
 
     elif cmd == "start":
