@@ -25,8 +25,8 @@ message=input(">")
 words=message.split(' ')
 emojis={
     ":)":"[smiley]",
-    ":(":"[frownie]"
-
+    ":(":"[frownie]",
+    "hii":"[hello]"
 }
 output=""
 for word in words:
