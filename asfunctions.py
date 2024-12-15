@@ -4,5 +4,5 @@ def user_greet(first_name,last_name):
 
 
 print("i am going to use a function")
-user_greet(last_name="Bajracharya",first_name="Miraj")
+user_greet(last_name="Bajracharya",first_name="Miraj")#improves readability of the code
 print("Finish")
