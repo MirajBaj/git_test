@@ -1,17 +1,20 @@
-class Point:
-    def __init__(self,x,y):
-        self.x=x
-        self.y=y
-
-    def move(self):
-        print("Move")
-    def draw(self):
-        print("Draw")
+class mammal():
+    def walk(self):
+        print("Walk")
 
 
-point1=Point(10,20)
-print(point1.x)
-point1.draw()
-point1.move()
+class dog(mammal):
+    def bark(self):
+        print("Bark")
 
 
+class cat(mammal):
+    def meow(self):
+        print("Meow")
+
+
+dog1=dog()
+dog1.walk()
+dog1.bark()
+cat1=cat()
+cat1.meow()
