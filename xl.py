@@ -1,6 +1,6 @@
 import openpyxl as xl
 from openpyxl.chart import BarChart, Reference
-
+filename=input("Enter the filename:")
 def process_workbook(filename):
     wb=xl.load_workbook(filename)
     sheet=wb['Sheet1']
@@ -15,7 +15,7 @@ def process_workbook(filename):
 
     chart=BarChart()
     chart.add_data(values)
-    sheet.add_chart(chart,'e2')
+    sheet.add_chart(chart,sheet.max_col+1)
 
     wb.save(filename)
 
